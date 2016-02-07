@@ -39,7 +39,7 @@ class MultiprocessingSocketStreamServer(object):
                 self._logger.debug("プロセス数が最大値に達しました。プロセス数：" + str(len(multiprocessing.active_children())))
                 time.sleep(1)
 
-# TCP を処理するハンドラ (抽象クラス / テンプレートメソッドパターン) 
+# TCP を処理するハンドラ 
 class SocketStreamHandler(object):
     def __init__(self):
         #ロガーの初期化
@@ -78,11 +78,10 @@ class SocketStreamHandler(object):
     def getState():
         return self._state
         
-    # 中身はサブクラスで定義してもらう 
     def handle(self):
         raise NotImplementedError
 
-# スコアを送信するハンドラ
+# 文字列を送信するハンドラ
 class EchoHandler(SocketStreamHandler): 
     def __init__(self, echo_string):
         self._echo_string = echo_string
@@ -96,7 +95,6 @@ class EchoHandler(SocketStreamHandler):
 
         while send_index < send_number * string_length:
             data = self._echo_string[string_index]
-            # ソケットにデータを送信
             self._sock.send(data.encode('utf-8'))              
             time.sleep(0.5)
             if string_index >= string_length - 1:
