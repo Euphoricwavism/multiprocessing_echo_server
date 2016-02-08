@@ -7,14 +7,7 @@ this is Python3 code that is multiprocessing echo server.
 *there is still undesirable code  
   
 ## 使い方 
-```
-$ python multiprocessing_echo_server.py
-以下の通りでサーバを起動します
-IPアドレス	：0.0.0.0
-ポート		：56789
-最大プロセス数	：10
-エコー文言	：Hello world
-```
+![使い方](https://raw.github.com/wiki/Euphoricwavism/multiprocessing_echo_server/images/multiprocessing_echo_server.gif)  
 or  
 ```
 $ python multiprocessing_echo_server.py 127.0.0.1 5006 20 "<C-D-E-F-E-D-C---E-F-G-A-G-F-E---C-C-C-C-CCDDEEFFE-D-C->Enter after encrypt your answer by MD5."
