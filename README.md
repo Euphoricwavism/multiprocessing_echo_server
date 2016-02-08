@@ -1,5 +1,6 @@
 # multiprocessing_echo_server
 Python3で記述されたマルチプロセスで動作するエコーサーバです。  
+[場阿忍愚CTF](https://burningctf.yamatosecurity.com/score/puzzle)の問題「164:電網術:Japanese kids are knowing」で使っています。  
 ※ところどころ雑なコードが残っています。  
 
 this is Python3 code that is multiprocessing echo server.  
