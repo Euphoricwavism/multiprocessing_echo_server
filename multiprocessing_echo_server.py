@@ -137,7 +137,7 @@ if __name__ == '__main__':
         print("引数が少なすぎます")
         quit()
 
-    print("以下の通りででサーバを起動します")
+    print("以下の通りでサーバを起動します")
     print("IPアドレス\t：{0}".format(ipaddress))
     print("ポート\t\t：{0}".format(port))
     print("最大プロセス数\t：{0}".format(max_processes))
